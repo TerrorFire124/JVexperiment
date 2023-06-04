@@ -11,13 +11,13 @@ CXXFLAGS += -Isrc/include/
 TARGET = JVexperiment/JVexperiment
 
 # Regla para construir el ejecutable a partir de los archivos objeto
-$(TARGET): main.o
-	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o
+$(TARGET): JVexperiment/main.o	
+	$(CXX) $(CXXFLAGS) -o $(TARGET) JVexperiment/main.o
 
 # Regla para construir main.o a partir de main.cpp
-main.o: main.cpp
-	$(CXX) $(CXXFLAGS) -c main.cpp
+JVexperiment/main.o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp -o JVexperiment/main.o	
 
 # Regla para limpiar los archivos generados
 clean:
-	rm -f $(TARGET) *.o
+	rm -f $(TARGET) JVexperiment/*.o
