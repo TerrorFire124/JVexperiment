@@ -8,7 +8,7 @@ CXXFLAGS = -Wall -Wextra
 CXXFLAGS += -Isrc/include/
 
 # Definir el nombre del archivo ejecutable
-TARGET = JVexperiment
+TARGET = JVexperiment/JVexperiment
 
 # Regla para construir el ejecutable a partir de los archivos objeto
 $(TARGET): main.o
