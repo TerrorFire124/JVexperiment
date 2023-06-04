@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Cargar el archivo JAR o JAD especificado como argumento
-    if (!load_game(argv[1])) {
+    if (!load_game("hola.jar")) {
         return 1;
     }
 
