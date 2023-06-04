@@ -4,6 +4,9 @@ CXX = g++
 # Definir las opciones del compilador
 CXXFLAGS = -Wall -Wextra
 
+# Agregar el directorio donde se encuentran archivos
+CXXFLAGS += -Isrc/include/
+
 # Definir el nombre del archivo ejecutable
 TARGET = JVexperiment
 
